@@ -180,12 +180,9 @@ with col_right:
 
             st.write("Predicted class:", class__, "(confidence:", round(float(conf__) * 100, 2), "%)")
 
-            # Compare the predicted class with the actual class (truth)
-            actual_class = true_labels.get(file_name, "Unknown")
-            st.write(f"**Actual class:** {actual_class}")
 
             # Create content for the prediction file
-            content = f"Predicted class: {class__}\nConfidence: {round(float(conf__) * 100, 2)}%\nActual class: {actual_class}"
+            content = f"Predicted class: {class__}\nConfidence: {round(float(conf__) * 100, 2)}%\n"
 
             # Save predictions to a text file
             with open("predictions.txt", "w") as f:

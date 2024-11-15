@@ -1,3 +1,2 @@
 Predicted class: Normal
 Confidence: 86.3%
-Actual class: Unknown
